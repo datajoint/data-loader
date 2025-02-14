@@ -54,3 +54,10 @@ repos:
           # W605 - a backslash-character pair that is not a valid escape sequence now
           #        generates a DeprecationWarning. This will eventually become a SyntaxError.
           #        Needed because we use \d as an escape sequence
+
+  # codespell
+  - repo: https://github.com/codespell-project/codespell
+    # Configuration for codespell is in .codespellrc
+    rev: v2.2.6
+    hooks:
+    - id: codespell

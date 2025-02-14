@@ -11,7 +11,7 @@ class EXTRACT_trigger:
         data = load('{scanfile}');
         M = data.M;
 
-        % Input Paramaters
+        % Input Parameters
         config = struct();
         {parameters_list_string}
 
@@ -31,7 +31,7 @@ class EXTRACT_trigger:
 
         Args:
             scanfile (Union[str, Path]): Full path of the scan
-            parameters (dict): EXTRACT input paramaters.
+            parameters (dict): EXTRACT input parameters.
             output_dir (Union[str, Path]): Directory to store the outputs of EXTRACT analysis.
         """
         assert isinstance(parameters, dict)

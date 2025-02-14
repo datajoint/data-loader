@@ -64,7 +64,7 @@ class Suite2p:
 
         self.creation_time = min(
             [p.creation_time for p in self.planes.values()]
-        )  # ealiest file creation time
+        )  # earliest file creation time
         self.curation_time = max(
             [p.curation_time for p in self.planes.values()]
         )  # most recent curation time

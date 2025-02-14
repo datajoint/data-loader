@@ -13,7 +13,7 @@ Observes [Semantic Versioning](https://semver.org/spec/v2.0.0.html) standard and
 
 ## [0.6.1] - 2023-08-02
 
-+ Update DANDI upload funtionality to improve useability
++ Update DANDI upload functionality to improve usability
 
 ## [0.6.0] - 2023-07-26
 
