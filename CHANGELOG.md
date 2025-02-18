@@ -3,6 +3,11 @@
 Observes [Semantic Versioning](https://semver.org/spec/v2.0.0.html) standard and
 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) convention.
 
+## [Unreleased]
+
++ Feature - Explicit `n_processes` arg in `run_caiman` to specify number of cores
+  to use
+
 ## [0.7.0] - 2024-08-09
 
 + Add - `memoized_result` decorator to cache function results

@@ -31,6 +31,7 @@ def run_caiman(
     sampling_rate: float,
     output_dir: str,
     is3D: bool,
+    n_processes: int = None,
 ):
     """
     Runs the standard caiman analysis pipeline (CNMF.fit_file method).
@@ -60,7 +61,8 @@ def run_caiman(
     os.environ["CAIMAN_TEMP"] = str(output_dir)
 
     # use 80% of available cores
-    n_processes = int(np.floor(multiprocessing.cpu_count() * 0.8))
+    if n_processes is None:
+        n_processes = int(np.floor(multiprocessing.cpu_count() * 0.8))
     _, dview, n_processes = cm.cluster.setup_cluster(
         backend="multiprocessing", n_processes=n_processes
     )
